@@ -48,14 +48,8 @@ function App() {
 					} />
 					<Route path='/album/:id' element={<AlbumView />} />
 					<Route path='/artist/:id' element={<ArtistView />} />
-					</Routes>
+				</Routes>
 			</Router>
-			<DataContext.Provider value={data}>
-				{/* <Gallery data={data} /> */}
-				<AlbumView />
-				<ArtistView />
-			</DataContext.Provider>
-		
 		</div>
 	);
 }
