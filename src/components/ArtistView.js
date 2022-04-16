@@ -1,16 +1,4 @@
 import { useState, useEffect } from 'react'
-<<<<<<< HEAD
-import { useParams } from 'react-router-dom'
-
-function ArtistView() {
-    const { id } = useParams()
-    const [ artistData, setArtistData ] = useState([])
-
-    return (
-        <div>
-            <h2>The id passed was: {id}</h2>
-            <p>Artist Data Goes Here!</p>
-=======
 import { useParams, Link, useNavigate } from 'react-router-dom'
 
 function ArtistView() {
@@ -55,14 +43,8 @@ function ArtistView() {
             {artistData.length > 0 ? <h2>{artistData[0].artistName}</h2> : <h2>Loading...</h2>}
             {navButtons()}
             {renderAlbums}
->>>>>>> 7c5d6e4f7734ec7d1633e0ab2066b6813682e026
         </div>
     )
 }
 
-<<<<<<< HEAD
-
 export default ArtistView
-=======
-export default ArtistView
->>>>>>> 7c5d6e4f7734ec7d1633e0ab2066b6813682e026

@@ -1,19 +1,9 @@
-<<<<<<< HEAD
-import {useEffect, useState } from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Gallery from './components/Gallery'
-import Searchbar from './components/Searchbar'
-import AlbumView from './components/AlbumView'
-import ArtistView from './components/ArtistView'
-import { DataContext } from './context/DataContext'
-=======
 import { useEffect, useState } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Gallery from './components/Gallery'
 import SearchBar from './components/SearchBar'
 import AlbumView from './components/AlbumView'
 import ArtistView from './components/ArtistView'
->>>>>>> 7c5d6e4f7734ec7d1633e0ab2066b6813682e026
 import { Fragment } from 'react/cjs/react.production.min'
 
 function App() {
@@ -49,16 +39,6 @@ function App() {
 			{message}
 			<Router>
 				<Routes>
-<<<<<<< HEAD
-					<Route path='/' element={
-						<Fragment>
-							<Searchbar handleSearch ={handleSearch}/>
-							<Gallery data={data} />
-						</Fragment>
-					} />
-					<Route path='/album/:id' element={<AlbumView />} />
-					<Route path='/artist/:id' element={<ArtistView />} />
-=======
 					<Route path="/" element={
 						<Fragment>
 							<SearchBar handleSearch = {handleSearch}/>
@@ -67,7 +47,6 @@ function App() {
 					} />
 					<Route path="/album/:id" element={<AlbumView />} />
 					<Route path="/artist/:id" element={<ArtistView />} />
->>>>>>> 7c5d6e4f7734ec7d1633e0ab2066b6813682e026
 				</Routes>
 			</Router>
 		</div>

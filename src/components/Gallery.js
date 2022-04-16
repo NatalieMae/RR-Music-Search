@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-// Gallery.js
-import { useContext } from 'react'
-import { DataContext } from '../context/DataContext'
-=======
->>>>>>> 7c5d6e4f7734ec7d1633e0ab2066b6813682e026
 import GalleryItem from './GalleryItem'
 
 

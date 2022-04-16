@@ -1,16 +1,4 @@
 import { useState, useEffect } from 'react'
-<<<<<<< HEAD
-import { useParams } from "react-router-dom";
-
-function AlbumView() {
-    const {id} = useParams()
-    const [ albumData, setAlbumData ] = useState([])
-
-    return (
-        <div>
-            <h2>The id passed was: {id} </h2>
-            <p>Album Data Goes Here!</p>
-=======
 import { useParams, useNavigate } from 'react-router-dom'
 
 function AlbumView() {
@@ -52,13 +40,8 @@ function AlbumView() {
         <div>
             {navButtons()}
             {renderSongs}
->>>>>>> 7c5d6e4f7734ec7d1633e0ab2066b6813682e026
         </div>
     )
 }
 
-<<<<<<< HEAD
 export default AlbumView
-=======
-export default AlbumView
->>>>>>> 7c5d6e4f7734ec7d1633e0ab2066b6813682e026
