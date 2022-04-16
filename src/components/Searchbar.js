@@ -1,5 +1,7 @@
-// Seachbar.js
 import { useState } from 'react'
+// import GalleryItem from './GalleryItem'
+// import AlbumView from './AlbumView'
+// import ArtistView from './ArtistView'
 
 function Searchbar(props) {
     let [searchTerm, setSearchTerm] = useState('')
